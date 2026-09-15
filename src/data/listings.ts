@@ -61,8 +61,8 @@ export const listings: Listing[] = [
     images: [
       { src: duplexWhite.url, alt: "White contemporary detached duplex with glazed stairwell and paved driveway" },
       { src: kitchenWarm.url, alt: "Fitted island kitchen with stone worktop and warm cove lighting" },
-      { src: livingRoom.url, alt: "Double-height living room with grey sofas and floor-to-ceiling windows" },
-      { src: bedroom.url, alt: "Master bedroom with upholstered headboard and marble accent wall" },
+      { src: livingRoom, alt: "Double-height living room with grey sofas and floor-to-ceiling windows" },
+      { src: bedroom, alt: "Master bedroom with upholstered headboard and marble accent wall" },
     ],
     featured: true,
   },
@@ -97,7 +97,7 @@ export const listings: Listing[] = [
     images: [
       { src: duplexBlack.url, alt: "Modern white duplex with dark glazing and polished granite forecourt" },
       { src: kitchenMono.url, alt: "Monochrome fitted kitchen with island and integrated appliances" },
-      { src: livingRoom.url, alt: "Open plan living area with marble floors and natural light" },
+      { src: livingRoom, alt: "Open plan living area with marble floors and natural light" },
     ],
     featured: true,
   },
@@ -131,7 +131,7 @@ export const listings: Listing[] = [
       "Verified title",
     ],
     images: [
-      { src: landAerial.url, alt: "Aerial view of a gated serviced estate with surveyed plots and access roads" },
+      { src: landAerial, alt: "Aerial view of a gated serviced estate with surveyed plots and access roads" },
     ],
     featured: true,
   },
@@ -165,9 +165,9 @@ export const listings: Listing[] = [
       "Managed service charge",
     ],
     images: [
-      { src: poolDusk.url, alt: "Luxury residence with lit pool deck at dusk surrounded by palm trees" },
-      { src: livingRoom.url, alt: "Furnished living room with contemporary sofas and large windows" },
-      { src: bedroom.url, alt: "En-suite bedroom with warm lighting and city view window" },
+      { src: poolDusk, alt: "Luxury residence with lit pool deck at dusk surrounded by palm trees" },
+      { src: livingRoom, alt: "Furnished living room with contemporary sofas and large windows" },
+      { src: bedroom, alt: "En-suite bedroom with warm lighting and city view window" },
     ],
   },
   {
@@ -233,8 +233,8 @@ export const listings: Listing[] = [
       "Solar-ready",
     ],
     images: [
-      { src: poolDusk.url, alt: "Family duplex with lit exterior and landscaped surroundings at dusk" },
-      { src: livingRoom.url, alt: "Reception room with marble floors and layered lighting" },
+      { src: poolDusk, alt: "Family duplex with lit exterior and landscaped surroundings at dusk" },
+      { src: livingRoom, alt: "Reception room with marble floors and layered lighting" },
       { src: kitchenMono.url, alt: "Kitchen with island, stone worktop and integrated appliances" },
     ],
   },
