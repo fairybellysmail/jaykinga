@@ -12,6 +12,10 @@ import {
 } from "lucide-react";
 import duplexWhite from "@/assets/duplex-white.jpeg.asset.json";
 import supervision from "@/assets/site-supervision.jpeg.asset.json";
+import siteBuild from "@/assets/jk_1.jpeg.asset.json";
+import siteWalk from "@/assets/jk_2.jpeg.asset.json";
+import siteInterior from "@/assets/jk_3.jpeg.asset.json";
+import siteHandover from "@/assets/jk_4.jpeg.asset.json";
 import signage from "@/assets/signage.jpeg.asset.json";
 import { Container, SectionHeading } from "@/components/site/Section";
 import { PropertyCard } from "@/components/site/PropertyCard";
@@ -275,12 +279,29 @@ function Home() {
           </Reveal>
           <Reveal className="order-1 lg:order-2">
             <img
-              src={supervision.url}
-              alt="Jaykinga Vision Realty supervisors reviewing drawings on an active construction site"
+              src={siteBuild.url}
+              alt="Jaykinga supervisor with workmen at a scaffolded duplex under construction in Lagos"
               loading="lazy"
               className="aspect-[4/5] w-full rounded-lg object-cover shadow-lift lg:aspect-[4/3]"
             />
           </Reveal>
+        </Container>
+
+        <Container className="mt-12 grid gap-4 sm:grid-cols-3">
+          {[
+            { src: siteWalk.url, alt: "Jaykinga supervisor inspecting groundworks and drainage on an active build site" },
+            { src: siteInterior.url, alt: "Site walkthrough inside an unfinished block-work interior with the client's team" },
+            { src: siteHandover.url, alt: "Jaykinga team reviewing finishing works at a completed home in Lagos" },
+          ].map((img, i) => (
+            <Reveal key={img.alt} delay={i * 80}>
+              <img
+                src={img.src}
+                alt={img.alt}
+                loading="lazy"
+                className="aspect-[4/3] w-full rounded-lg object-cover opacity-90 transition-opacity hover:opacity-100"
+              />
+            </Reveal>
+          ))}
         </Container>
       </section>
 

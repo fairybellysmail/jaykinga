@@ -1,8 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Compass, Eye, Handshake, ShieldCheck } from "lucide-react";
 import duplexBeige from "@/assets/duplex-beige.png.asset.json";
-import supervision from "@/assets/site-supervision.jpeg.asset.json";
-import kitchenWarm from "@/assets/kitchen-warm.jpeg.asset.json";
+import siteBuild from "@/assets/jk_1.jpeg.asset.json";
+import siteWalk from "@/assets/jk_2.jpeg.asset.json";
+import siteInterior from "@/assets/jk_3.jpeg.asset.json";
+import siteHandover from "@/assets/jk_4.jpeg.asset.json";
 import { Container, PageHero, SectionHeading } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { site } from "@/lib/site";
