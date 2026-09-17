@@ -68,19 +68,42 @@ function AboutPage() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <img
-                src={supervision.url}
-                alt="Site supervisors inspecting an ongoing residential build"
-                loading="lazy"
-                className="aspect-[3/4] w-full rounded-lg object-cover shadow-card"
-              />
-              <img
-                src={kitchenWarm.url}
-                alt="Warm-toned marble island kitchen in a completed Jaykinga residence"
-                loading="lazy"
-                className="aspect-[3/4] w-full rounded-lg object-cover shadow-card sm:mt-10"
-              />
+            <p className="eyebrow text-gold">On site every week</p>
+            <div className="mt-5 grid gap-5 sm:grid-cols-2">
+              {[
+                {
+                  src: siteBuild.url,
+                  alt: "Jaykinga supervisor with workmen at a scaffolded duplex under construction",
+                  caption: "Daily presence while the structure goes up.",
+                },
+                {
+                  src: siteWalk.url,
+                  alt: "Supervisor checking groundworks and drainage on an active site",
+                  caption: "Groundworks and drainage checked before they are covered.",
+                },
+                {
+                  src: siteInterior.url,
+                  alt: "Client walkthrough inside an unfinished block-work interior",
+                  caption: "Client walkthroughs at every major stage.",
+                },
+                {
+                  src: siteHandover.url,
+                  alt: "Jaykinga team reviewing finishing works at a completed Lagos home",
+                  caption: "Snag list and handover on the finished home.",
+                },
+              ].map((img, i) => (
+                <figure key={img.caption} className={i % 2 === 1 ? "sm:mt-10" : undefined}>
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    loading="lazy"
+                    className="aspect-[3/4] w-full rounded-lg object-cover shadow-card"
+                  />
+                  <figcaption className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                    {img.caption}
+                  </figcaption>
+                </figure>
+              ))}
             </div>
           </Reveal>
         </Container>
