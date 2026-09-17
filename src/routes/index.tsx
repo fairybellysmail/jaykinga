@@ -11,7 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import duplexWhite from "@/assets/duplex-white.jpeg.asset.json";
-import supervision from "@/assets/site-supervision.jpeg.asset.json";
+
 import siteBuild from "@/assets/jk_1.jpeg.asset.json";
 import siteWalk from "@/assets/jk_2.jpeg.asset.json";
 import siteInterior from "@/assets/jk_3.jpeg.asset.json";
