@@ -11,6 +11,8 @@ import {
   Sparkles,
 } from "lucide-react";
 import livingRoom from "@/assets/gen-living-room.jpg";
+import siteInterior from "@/assets/jk_3.jpeg.asset.json";
+import siteHandover from "@/assets/jk_4.jpeg.asset.json";
 import { Container, PageHero, SectionHeading } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 
@@ -109,6 +111,52 @@ function ServicesPage() {
               </Reveal>
             ))}
           </div>
+        </Container>
+      </section>
+
+      <section className="pb-20 lg:pb-28">
+        <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <Reveal>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <img
+                src={siteInterior.url}
+                alt="Jaykinga supervisors walking a client through an unfinished block-work interior"
+                loading="lazy"
+                className="aspect-[3/4] w-full rounded-lg object-cover shadow-card"
+              />
+              <img
+                src={siteHandover.url}
+                alt="Jaykinga team reviewing finishing works at a completed Lagos home"
+                loading="lazy"
+                className="aspect-[3/4] w-full rounded-lg object-cover shadow-card sm:mt-10"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={90}>
+            <SectionHeading
+              eyebrow="On the ground"
+              title="Construction supervision in practice"
+              description="These are our own site visits. Whether you are in Lagos or abroad, the same team checks the work before you pay for it."
+            />
+            <ul className="mt-8 space-y-3 text-sm leading-relaxed text-muted-foreground">
+              {[
+                "Stage checks against approved drawings — foundation, decking, roofing, finishing",
+                "Monthly photo and video reports so you see progress without travelling",
+                "Contractor milestones released only after the stage passes inspection",
+              ].map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span className="text-gold">—</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <Link
+              to="/contact"
+              className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-gold"
+            >
+              Discuss your build <ArrowRight className="size-4" aria-hidden />
+            </Link>
+          </Reveal>
         </Container>
       </section>
 
